@@ -26,22 +26,16 @@ bool ll_has_prev(struct ll_node *node) {
 
 struct ll_node *ll_next(struct ll_node *node) {
     assert(node != NULL);
-    // TODO: Implement your solution here.
+    // TODO: Implement your solution here
 
-    if(ll_has_next(node)) {
-        return node->next;
-    }
-    return NULL;
+    return node->next;
 }
 
 struct ll_node *ll_prev(struct ll_node *node) {
     assert(node != NULL);
     // TODO: Implement your solution here.
-
-    if(ll_has_prev(node)) {
-        return node->prev;
-    }
-    return NULL;
+    
+    return node->prev;
 }
 
 size_t ll_size(struct ll_node *head) {
